@@ -1,0 +1,208 @@
+
+ETL@DESKTOP-PQF1H0Q MINGW64 ~ (master)
+$ mkdir lab2.1
+
+ETL@DESKTOP-PQF1H0Q MINGW64 ~ (master)
+$
+
+ETL@DESKTOP-PQF1H0Q MINGW64 ~ (master)
+$ git config --global user.email "alaoemmanuel2014@gmail.com"
+
+ETL@DESKTOP-PQF1H0Q MINGW64 ~ (master)
+$ git config --global user.username "omogidi"
+
+ETL@DESKTOP-PQF1H0Q MINGW64 ~ (master)
+$ cd lab2.1
+
+ETL@DESKTOP-PQF1H0Q MINGW64 ~/lab2.1 (master)
+$ git config --global user.email "alaoemmanuel2014@gmail.com"
+
+ETL@DESKTOP-PQF1H0Q MINGW64 ~/lab2.1 (master)
+$ git config --global user.username "omogidi"
+
+ETL@DESKTOP-PQF1H0Q MINGW64 ~/lab2.1 (master)
+$
+
+ETL@DESKTOP-PQF1H0Q MINGW64 ~/lab2.1 (master)
+$ touch index.html file.txt cprog.c javaprog.java index.js style.css typo.ts
+
+ETL@DESKTOP-PQF1H0Q MINGW64 ~/lab2.1 (master)
+$ vi javaprog.java
+
+ETL@DESKTOP-PQF1H0Q MINGW64 ~/lab2.1 (master)
+$ vi index.html
+
+ETL@DESKTOP-PQF1H0Q MINGW64 ~/lab2.1 (master)
+$ git init
+Initialized empty Git repository in C:/Users/ETL/lab2.1/.git/
+
+ETL@DESKTOP-PQF1H0Q MINGW64 ~/lab2.1 (master)
+$ git add .
+warning: LF will be replaced by CRLF in index.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in javaprog.java.
+The file will have its original line endings in your working directory
+
+ETL@DESKTOP-PQF1H0Q MINGW64 ~/lab2.1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   cprog.c
+        new file:   file.txt
+        new file:   index.html
+        new file:   index.js
+        new file:   javaprog.java
+        new file:   style.css
+        new file:   typo.ts
+
+
+ETL@DESKTOP-PQF1H0Q MINGW64 ~/lab2.1 (master)
+$ git commit . -m "This folder includes all the demo files"
+warning: LF will be replaced by CRLF in index.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in javaprog.java.
+The file will have its original line endings in your working directory
+[master (root-commit) 17a79b9] This folder includes all the demo files
+ 7 files changed, 16 insertions(+)
+ create mode 100644 cprog.c
+ create mode 100644 file.txt
+ create mode 100644 index.html
+ create mode 100644 index.js
+ create mode 100644 javaprog.java
+ create mode 100644 style.css
+ create mode 100644 typo.ts
+
+ETL@DESKTOP-PQF1H0Q MINGW64 ~/lab2.1 (master)
+$ git remote add origin git@github.com:omogidi/Lab2.1.git
+
+ETL@DESKTOP-PQF1H0Q MINGW64 ~/lab2.1 (master)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'github.com:omogidi/Lab2.1.git'
+
+ETL@DESKTOP-PQF1H0Q MINGW64 ~/lab2.1 (master)
+$ git push -u origin master
+The authenticity of host 'github.com (140.82.121.4)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (RSA) to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+ETL@DESKTOP-PQF1H0Q MINGW64 ~/lab2.1 (master)
+$ git remote add origin https://github.com/omogidi/Lab2.1.git
+error: remote origin already exists.
+
+ETL@DESKTOP-PQF1H0Q MINGW64 ~/lab2.1 (master)
+$ ls -al ~/ .ssh
+ls: cannot access '.ssh': No such file or directory
+/c/Users/ETL/:
+total 5082
+drwxr-xr-x 1 ETL 197121       0 May 25 18:25  ./
+drwxr-xr-x 1 ETL 197121       0 May  4 02:52  ../
+drwxr-xr-x 1 ETL 197121       0 May 25 18:09  .git/
+-rw-r--r-- 1 ETL 197121      63 May 25 18:15  .gitconfig
+drwxr-xr-x 1 ETL 197121       0 Apr 27 16:48  .gnutls/
+drwxr-xr-x 1 ETL 197121       0 May 25 18:25  .ssh/
+-rw-r--r-- 1 ETL 197121    1309 May 25 18:17  .viminfo
+drwxr-xr-x 1 ETL 197121       0 May  4 03:24 '3D Objects'/
+drwxr-xr-x 1 ETL 197121       0 May  4 02:55  AppData/
+lrwxrwxrwx 1 ETL 197121      28 May  4 02:52 'Application Data' -> /c/Users/ETL/AppData/Roaming/
+drwxr-xr-x 1 ETL 197121       0 May  4 03:24  Contacts/
+lrwxrwxrwx 1 ETL 197121      56 May  4 02:52  Cookies -> /c/Users/ETL/AppData/Local/Microsoft/Windows/INetCookies/
+drwxr-xr-x 1 ETL 197121       0 May 25 10:13  Desktop/
+drwxr-xr-x 1 ETL 197121       0 May  7 10:11  Documents/
+drwxr-xr-x 1 ETL 197121       0 May 25 10:13  Downloads/
+drwxr-xr-x 1 ETL 197121       0 May  4 03:24  Favorites/
+drwxr-xr-x 1 ETL 197121       0 May  4 03:24  Links/
+lrwxrwxrwx 1 ETL 197121      26 May  4 02:52 'Local Settings' -> /c/Users/ETL/AppData/Local/
+drwxr-xr-x 1 ETL 197121       0 Apr 26 01:42  MicrosoftEdgeBackups/
+drwxr-xr-x 1 ETL 197121       0 May 22 14:24  Music/
+lrwxrwxrwx 1 ETL 197121      22 May  4 02:52 'My Documents' -> /c/Users/ETL/Documents/
+-rw-r--r-- 1 ETL 197121 2883584 May 24 15:27  NTUSER.DAT
+-rw-r--r-- 1 ETL 197121   65536 May  4 02:52  NTUSER.DAT{3a14077c-ac82-11eb-a88b-f9b04da528d5}.TM.blf
+-rw-r--r-- 1 ETL 197121  524288 May  4 02:52  NTUSER.DAT{3a14077c-ac82-11eb-a88b-f9b04da528d5}.TMContainer00000000000000000001.regtrans-ms
+-rw-r--r-- 1 ETL 197121  524288 May  4 02:52  NTUSER.DAT{3a14077c-ac82-11eb-a88b-f9b04da528d5}.TMContainer00000000000000000002.regtrans-ms
+lrwxrwxrwx 1 ETL 197121      64 May  4 02:52  NetHood -> '/c/Users/ETL/AppData/Roaming/Microsoft/Windows/Network Shortcuts'/
+drwxr-xr-x 1 ETL 197121       0 May 24 15:31  OneDrive/
+drwxr-xr-x 1 ETL 197121       0 May  4 03:24  Pictures/
+lrwxrwxrwx 1 ETL 197121      64 May  4 02:52  PrintHood -> '/c/Users/ETL/AppData/Roaming/Microsoft/Windows/Printer Shortcuts'/
+lrwxrwxrwx 1 ETL 197121      53 May  4 02:52  Recent -> /c/Users/ETL/AppData/Roaming/Microsoft/Windows/Recent/
+drwxr-xr-x 1 ETL 197121       0 May  4 03:24 'Saved Games'/
+drwxr-xr-x 1 ETL 197121       0 May  4 03:24  Searches/
+lrwxrwxrwx 1 ETL 197121      53 May  4 02:52  SendTo -> /c/Users/ETL/AppData/Roaming/Microsoft/Windows/SendTo/
+lrwxrwxrwx 1 ETL 197121      57 May  4 02:52 'Start Menu' -> '/c/Users/ETL/AppData/Roaming/Microsoft/Windows/Start Menu'/
+lrwxrwxrwx 1 ETL 197121      56 May  4 02:52  Templates -> /c/Users/ETL/AppData/Roaming/Microsoft/Windows/Templates/
+drwxr-xr-x 1 ETL 197121       0 Apr 29 08:39  Tracing/
+drwxr-xr-x 1 ETL 197121       0 May  8 23:16  Videos/
+drwxr-xr-x 1 ETL 197121       0 May 25 18:17  lab2.1/
+-rw-r--r-- 1 ETL 197121  872448 May  4 02:52  ntuser.dat.LOG1
+-rw-r--r-- 1 ETL 197121  233472 May  4 02:52  ntuser.dat.LOG2
+-rw-r--r-- 1 ETL 197121      20 May  4 03:23  ntuser.ini
+
+ETL@DESKTOP-PQF1H0Q MINGW64 ~/lab2.1 (master)
+$ ssh-keygen -t ed25519 -C "alaoemmanuel2014@gmail.com"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/c/Users/ETL/.ssh/id_ed25519):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/ETL/.ssh/id_ed25519
+Your public key has been saved in /c/Users/ETL/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:ZpZsy0FJqNBYWHqqfo7b4vN5hmhKA6mOrc7tYcqAjxQ alaoemmanuel2014@gmail.com
+The key's randomart image is:
++--[ED25519 256]--+
+|   *o  ..        |
+|  +.. .. .       |
+|  ....  o        |
+| . o.  o .       |
+|oE.     S        |
+|+..    * o       |
+|=+.o.   o        |
+|XOBooo           |
+|X%@Bo            |
++----[SHA256]-----+
+
+ETL@DESKTOP-PQF1H0Q MINGW64 ~/lab2.1 (master)
+$ eval `ssh-agent -s`
+Agent pid 745
+
+ETL@DESKTOP-PQF1H0Q MINGW64 ~/lab2.1 (master)
+$ ssh-add ~/.ssh/id_ed25519
+Enter passphrase for /c/Users/ETL/.ssh/id_ed25519:
+Identity added: /c/Users/ETL/.ssh/id_ed25519 (alaoemmanuel2014@gmail.com)
+
+ETL@DESKTOP-PQF1H0Q MINGW64 ~/lab2.1 (master)
+$ clip < ~/.ssh/id_ed25519.pub
+
+ETL@DESKTOP-PQF1H0Q MINGW64 ~/lab2.1 (master)
+$ ssh -T git@github.com
+Hi omogidi! You've successfully authenticated, but GitHub does not provide shell access.
+
+ETL@DESKTOP-PQF1H0Q MINGW64 ~/lab2.1 (master)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'github.com:omogidi/Lab2.1.git'
+
+ETL@DESKTOP-PQF1H0Q MINGW64 ~/lab2.1 (master)
+$ git push -u origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 560 bytes | 80.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:omogidi/Lab2.1.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+ETL@DESKTOP-PQF1H0Q MINGW64 ~/lab2.1 (master)
